@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Events | WebPage for  upcoming events</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<img src="images/logo.png" width="225px">
+				</div>
+				<nav>
+					<ul id="MenuItems">
+						<li><a href="index.html">Upcoming Events</a></li>
+						<li><a href="index.html">About</a></li>
+						<li><a href="index.html">Contact</a></li>
+						<li><a href="account.html">Account</a></li>
+					</ul>
+				</nav>
+
+				<img src="images/bucket.png" width="50px">
+				<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+			</div>
+		</div>
+	</div>
+
+	<div class="small-container cart-page">
+		<table>
+			<tr>
+				<th>Event</th>
+				<th>Quantity</th>
+				<th>Subtotal</th>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+						<img src="images\chico.jpg">
+						<div>
+							<p>Chico</p>
+							<small>Cost: 50000KZT</small>
+							<br>
+							<a href="">Remove</a>
+						</div>
+					</div>
+				</td>
+				<td><input type="number" value="1"></td>
+				<td>50000KZT</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+						<img src="images\fizmat.jpg">
+						<div>
+							<p>FIZMAT</p>
+							<small>Cost: 1KZT</small>
+							<br>
+							<a href="">Remove</a>
+						</div>
+					</div>
+				</td>
+				<td><input type="number" value="1"></td>
+				<td>1KZT</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+						<img src="images\nis.jpg">
+						<div>
+							<p>NIS</p>
+							<small>Cost: 1KZT</small>
+							<br>
+							<a href="">Remove</a>
+						</div>
+					</div>
+				</td>
+				<td><input type="number" value="1"></td>
+				<td>1KZT</td>
+			</tr>
+		</table>
+
+		<div class="total-price">
+			<table>
+				<tr>
+					<td>Subtotal</td>
+					<td>50002KZT</td>
+				</tr>
+				<tr>
+					<td>Tax</td>
+					<td>20KZT</td>
+				</tr>
+				<tr>
+					<td>Total</td>
+					<td>50022KZT</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+		MenuItems.style.maxHeight = "0px";
+		function menutoggle(){
+			if(MenuItems.style.maxHeight == "0px") {
+				MenuItems.style.maxHeight = "200px" ;
+			} else {
+				MenuItems.style.maxHeight = "0px" ;
+			}
+		}
+	</script>
+
+</body>
+</html>
